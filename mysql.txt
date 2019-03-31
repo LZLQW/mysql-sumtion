@@ -1,0 +1,30 @@
+创建数据库
+create DATABASE RUNOOB;
+
+选择数据库
+use RUNOOB;
+
+删除数据库
+drop database RUNOOB;
+
+查看表结构
+use RUNOOB;
+show tables;
+desc runoob_tbl;
+
+删除数据表
+DROP table runoob_tbl;
+
+删除表内数据
+delete from 表名 where 删除条件;
+example:
+	delete from student where T_name = "张三";
+
+清除表内数据，保存表结构，用truncate 
+trucate table 表名;
+example:
+	trucate table student;
+
+1、当你不再需要该表时， 用 drop;
+2、当你仍要保留该表，但要删除所有记录时， 用 truncate;
+3、当你要删除部分记录时， 用 delete。
